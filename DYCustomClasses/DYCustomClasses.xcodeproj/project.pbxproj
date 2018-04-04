@@ -14,6 +14,9 @@
 		84286DBB2072116D00B1CD06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84286DB92072116D00B1CD06 /* LaunchScreen.storyboard */; };
 		84286DC62072116D00B1CD06 /* DYCustomClassesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84286DC52072116D00B1CD06 /* DYCustomClassesTests.m */; };
 		84286DD12072116D00B1CD06 /* DYCustomClassesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84286DD02072116D00B1CD06 /* DYCustomClassesUITests.m */; };
+		843E46BB2074A88D006DC249 /* UILabel+DYCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E46BA2074A88D006DC249 /* UILabel+DYCustom.m */; };
+		843E46BF2074ABA6006DC249 /* NSString+DYCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E46BE2074ABA6006DC249 /* NSString+DYCustom.m */; };
+		843E46C32074BCC1006DC249 /* UIButton+DYCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 843E46C22074BCC1006DC249 /* UIButton+DYCustom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,13 @@
 		84286DCC2072116D00B1CD06 /* DYCustomClassesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYCustomClassesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84286DD02072116D00B1CD06 /* DYCustomClassesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYCustomClassesUITests.m; sourceTree = "<group>"; };
 		84286DD22072116D00B1CD06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843E46B62074A164006DC249 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		843E46B92074A88D006DC249 /* UILabel+DYCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DYCustom.h"; sourceTree = "<group>"; };
+		843E46BA2074A88D006DC249 /* UILabel+DYCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DYCustom.m"; sourceTree = "<group>"; };
+		843E46BD2074ABA6006DC249 /* NSString+DYCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DYCustom.h"; sourceTree = "<group>"; };
+		843E46BE2074ABA6006DC249 /* NSString+DYCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DYCustom.m"; sourceTree = "<group>"; };
+		843E46C12074BCC1006DC249 /* UIButton+DYCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DYCustom.h"; sourceTree = "<group>"; };
+		843E46C22074BCC1006DC249 /* UIButton+DYCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DYCustom.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,8 @@
 		84286DAA2072116D00B1CD06 /* DYCustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				843E46B82074A28E006DC249 /* Category(类别) */,
+				843E46B72074A1C0006DC249 /* PrefixHeaderAndMacroHeader */,
 				84286DAE2072116D00B1CD06 /* AppDelegate.h */,
 				84286DAF2072116D00B1CD06 /* AppDelegate.m */,
 				84286DB42072116D00B1CD06 /* Main.storyboard */,
@@ -133,6 +145,43 @@
 				84286DD22072116D00B1CD06 /* Info.plist */,
 			);
 			path = DYCustomClassesUITests;
+			sourceTree = "<group>";
+		};
+		843E46B72074A1C0006DC249 /* PrefixHeaderAndMacroHeader */ = {
+			isa = PBXGroup;
+			children = (
+				843E46B62074A164006DC249 /* PrefixHeader.pch */,
+			);
+			name = PrefixHeaderAndMacroHeader;
+			sourceTree = "<group>";
+		};
+		843E46B82074A28E006DC249 /* Category(类别) */ = {
+			isa = PBXGroup;
+			children = (
+				843E46BC2074AB62006DC249 /* UI家族 */,
+				843E46C02074ABAA006DC249 /* NS家族 */,
+			);
+			name = "Category(类别)";
+			sourceTree = "<group>";
+		};
+		843E46BC2074AB62006DC249 /* UI家族 */ = {
+			isa = PBXGroup;
+			children = (
+				843E46B92074A88D006DC249 /* UILabel+DYCustom.h */,
+				843E46BA2074A88D006DC249 /* UILabel+DYCustom.m */,
+				843E46C12074BCC1006DC249 /* UIButton+DYCustom.h */,
+				843E46C22074BCC1006DC249 /* UIButton+DYCustom.m */,
+			);
+			name = "UI家族";
+			sourceTree = "<group>";
+		};
+		843E46C02074ABAA006DC249 /* NS家族 */ = {
+			isa = PBXGroup;
+			children = (
+				843E46BD2074ABA6006DC249 /* NSString+DYCustom.h */,
+				843E46BE2074ABA6006DC249 /* NSString+DYCustom.m */,
+			);
+			name = "NS家族";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +320,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843E46BB2074A88D006DC249 /* UILabel+DYCustom.m in Sources */,
+				843E46BF2074ABA6006DC249 /* NSString+DYCustom.m in Sources */,
 				84286DB02072116D00B1CD06 /* AppDelegate.m in Sources */,
 				84286DAD2072116D00B1CD06 /* main.m in Sources */,
+				843E46C32074BCC1006DC249 /* UIButton+DYCustom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +474,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M92V2T43TR;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/admin/Desktop/姚大勇/日常工作/DYCustomClasses/DYCustomClasses/DYCustomClasses/PrefixHeader.pch";
 				INFOPLIST_FILE = DYCustomClasses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baihe.DYCustomClasses;
@@ -434,6 +488,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M92V2T43TR;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/admin/Desktop/姚大勇/日常工作/DYCustomClasses/DYCustomClasses/DYCustomClasses/PrefixHeader.pch";
 				INFOPLIST_FILE = DYCustomClasses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baihe.DYCustomClasses;
@@ -510,6 +566,7 @@
 				84286DD72072116D00B1CD06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84286DD82072116D00B1CD06 /* Build configuration list for PBXNativeTarget "DYCustomClassesTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +575,7 @@
 				84286DDA2072116D00B1CD06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84286DDB2072116D00B1CD06 /* Build configuration list for PBXNativeTarget "DYCustomClassesUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +584,7 @@
 				84286DDD2072116D00B1CD06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
